@@ -1,0 +1,168 @@
+/* Q:1 Create masterhead -add background image and put a text at the center, with button below it */
+.main{
+    display: flex;
+    justify-content: center;
+}
+.parent{
+    background-image: url(./Masterhead.svg);
+    height:500px;
+    /* width:500px; */
+    background-repeat: no-repeat;
+    
+}
+.header{
+    text-align:center;
+    /* margin-left: 280px;  */
+    font-size:30px; 
+    font-weight: 800;
+    color: blue;
+
+}
+.login{
+    margin-top: 474px;
+    margin-left: 40px;
+    background-color: rgb(216, 21, 167);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 27px;
+    color: white;
+}
+
+   
+ /* Q:2 Create header--left side will have logo and right side will have 4 button  */
+.parent2{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width:50px;
+    height:70px;
+}
+.btn1{
+    color:rgb(223, 44, 74);
+    border: 2px solid rgb(223, 44, 74) ;
+    border-radius: 5px;
+    margin-top: 5px;
+    width:80px;
+    height: 27px;
+    background-color: white;
+    margin-top: 10px;
+    
+    
+}
+.btn2{
+    color:white;
+    border: 2px solid rgb(223, 44, 74) ;
+    border-radius: 3px;
+    background-color: rgb(223, 44, 74);
+    height: 27px;
+    width: 90px;
+    margin-left: 30px;
+}
+
+/* Q:3 Create 3 cards of height & width 200px with texts in it, the card should be horizontally placed in web view and vertically in mobile view */
+.main{
+    display: flex;
+    
+}
+.card{
+    width: 200px;
+    height: 200px;
+}
+.card1{
+    background-color: blueviolet;
+}
+.card2{
+    background-color: brown;
+}
+.card3{
+    background-color: aqua;
+}
+.card4{
+    background-color: darkgreen;
+}
+@media (min-width:340px) and (max-width:540px){
+    .main{
+        flex-direction: column;
+    }
+}
+
+
+/* Q:4   */
+div{
+    display: flex;
+    /* justify-content: space-between; */
+  }
+.btn3{
+    color:white;
+    border: 2px solid rgb(223, 44, 74) ;
+    border-radius: 5px;
+    margin-top: 5px;
+    width:80px;
+    height: 27px;
+    background-color: rgb(24, 7, 210);
+    
+    
+}
+.btn4{
+    color:white;
+    border: 2px solid rgb(223, 44, 74) ;
+    border-radius: 3px;
+    background-color: rgb(24, 7, 210);
+    height: 27px;
+    width: 90px;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+/* in mobile view  */
+ @media (min-width:340px) and (max-width:560px) {
+    div{
+        flex-direction: column;
+    }
+    .btn4{
+        background-color: green;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .btn3{
+        background-color: green;
+    }
+}
+/* in tablet view */
+@media (min-width:561px) and (max-width:800px) {
+    div{
+        flex-direction: column;
+    }
+    .btn4{
+        background-color: red;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .btn3{
+        background-color: red;
+    }
+}
+
+/* Q:5 */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(30, 255, 86);
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 160px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  h1{
+    color: red;
+    text-align: center;
+  }
+  h3{
+    color: green;
+  }
